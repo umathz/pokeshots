@@ -1,0 +1,43 @@
+/*Fontes Personalizadas*/
+@font-face {
+	font-family: "Flexo";
+	src: url('../font/Flexo-Black.woff');
+}
+@font-face {
+	font-family: "Flexo";
+	src: url('../font/Flexo-Regular.woff');
+}
+/*---------------------------*/
+
+/*Body*/
+body {
+	margin: 0;
+  	padding-top: 0;
+  	position: relative;
+  	min-height: 100vh; 
+  	overflow-x: hidden;
+}
+
+/*Background*/
+.background {
+	margin: 0;
+    padding: 0;
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.background::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url('../images/bg/bg2.svg');
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.4; 
+    z-index: -1;
+}
+/*---------------------------*/

@@ -1,0 +1,141 @@
+/*Fontes Personalizadas*/
+@font-face {
+	font-family: "Flexo";
+	src: url('../font/Flexo-Black.woff');
+}
+@font-face {
+	font-family: "Flexo";
+	src: url('../font/Flexo-Regular.woff');
+}
+/*---------------------------*/
+
+/*Body*/
+.menu {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 10%;
+    background: red;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 34% 1fr;
+    align-items: center;
+    padding: 0 3%;
+    overflow: hidden;
+}
+
+.menu-esquerda {
+    display: flex;
+    padding-left: 20%;
+    gap: 5vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-meio {
+    position: relative;
+    width: 80%;
+    min-width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-direita {
+    display: flex;
+    padding-right: 60%;
+    gap: 5vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.circleblack {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    max-width: 80%;
+    aspect-ratio: 1 / 1;
+    background: #000000;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 0;
+}
+
+.circlebg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    max-width: 60%;
+    aspect-ratio: 1 / 1;
+    background: #ffffff;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;  
+}
+
+.pokeicon {
+    width: 70%;
+    aspect-ratio: 1 / 1;
+
+    mask: url("../images/icons/pokeballine.svg") center/contain no-repeat;
+    -webkit-mask: url("../images/icons/pokeballine.svg") center/contain no-repeat;
+    background-color: black;
+    opacity: 20%;
+
+    transform: rotate(45deg);
+    transform-origin: center;
+}
+
+.logo {
+    position: absolute;
+    width: 70%;
+    max-width: 70%;
+    height: 60%;
+    aspect-ratio: 1 / 1;
+    background-image: url(../images/logo/pokeshotslogo.png);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: center;
+
+}
+
+/* --- ÍCONES LATERAIS --- */
+.icon {
+    width: 4vh;
+    aspect-ratio: 1/1;
+    background: white;
+    background-size: 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    display: block;
+    position: relative;
+    z-index: 9999;
+}
+
+.menu-esquerda .icon:nth-child(1) {
+    mask: url("../images/icons/home.svg") center/contain no-repeat;
+    -webkit-mask: url("../images/icons/home.svg") center/contain no-repeat;
+    background-color: rgb(255, 255, 255);
+}
+
+.menu-esquerda .icon:nth-child(2) {
+    mask: url("../images/icons/game.svg") center/contain no-repeat;
+    -webkit-mask: url("../images/icons/game.svg") center/contain no-repeat;
+    background-color: rgb(255, 255, 255);
+}
+
+.menu-direita .icon:nth-child(1) {
+    mask: url("../images/icons/pokemon.svg") center/contain no-repeat;
+    -webkit-mask: url("../images/icons/pokemon.svg") center/contain no-repeat;
+    background-color: rgb(255, 255, 255);
+}
+
+.menu-direita .icon:nth-child(2) {
+    mask: url("../images/icons/sobre.svg") center/contain no-repeat;
+    -webkit-mask: url("../images/icons/sobre.svg") center/contain no-repeat;
+    background-color: rgb(255, 255, 255);
+}
