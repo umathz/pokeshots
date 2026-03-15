@@ -1,0 +1,90 @@
+/*Fontes Personalizadas*/
+@font-face {
+	font-family: "Flexo";
+	src: url('../font/Flexo-Black.woff');
+}
+@font-face {
+	font-family: "Flexo";
+	src: url('../font/Flexo-Regular.woff');
+}
+/*---------------------------*/
+
+/*Body*/
+body {
+	margin: 0;
+  	padding-top: 0;
+  	min-height: 100vh; 
+  	overflow-x: hidden;
+}
+
+/*Background*/
+.background {
+	margin: 0;
+    padding: 0;
+    position: relative;
+    min-height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.background::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url('../images/bg/bg2.svg');
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    opacity: 0.4; 
+    z-index: -1;
+}
+/*---------------------------*/
+
+.conteiner {
+    padding-top: 10%;
+    width: 60%;
+}
+
+.conteudo {
+    width: 100%;
+    margin: 50px auto; 
+    position: relative;
+    z-index: 1;
+}
+
+h1 {
+    font-family: "Flexo";
+    font-weight: 900;
+    color: red;
+    font-size: 1.5vw;
+}
+
+h2 {
+    font-family: "Flexo";
+    font-weight: 900;
+    color: black;
+    font-size: 1.2vw;
+    line-height: 3;
+}
+
+h3 {
+    font-family: "Flexo";
+    font-weight: 900;
+    color: rgb(119, 119, 119);
+    font-size: 1.2vw;
+    
+}
+
+p, li {
+    font-family: "Flexo";
+    font-weight: 900;
+    color: rgb(119, 119, 119);
+    font-size: 0.9vw;
+    line-height: 1.8;
+}
+
+strong, em {
+    color: black;
+}
